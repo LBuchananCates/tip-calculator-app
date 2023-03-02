@@ -1,13 +1,25 @@
-console.log("hello world");
+// get inputs
+const billInput = document.getElementById("bill-input");
+const peopleInput = document.querySelector(".num-people-input");
 
-const fivePercent = document.querySelector(".five");
-const tenPercent = document.querySelector(".ten");
-const fifteenPercent = document.querySelector(".fifteen");
-const twentyFivePercent = document.querySelector(".twenty-five");
-const fiftyPercent = document.querySelector(".fifty");
+parseFloat(billInput.value);
+let numPeople = peopleInput.value;
 
-// total per person = total bill-input.value + (bill-input.value x tip%) divided by num-people-input.value
+// get tips
+const tips = document.querySelector(".tip");
+const customTip = document.querySelector(".custom-tip");
 
-// tip amount = bill-input x percentage selected
+// get prices
+const tipPerPerson = document.querySelector(".tip-amount");
+const totalPerPerson = document.querySelector(".total-bill-amount");
 
-// reset button clears all input values or refreshes page
+// show error message with add/remove classes
+const errorMsg = document.querySelector(".error-message");
+
+// get reset button
+const resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", function () {
+  billInput.value = "";
+  customTip.value = "";
+  peopleInput.value = "";
+});
