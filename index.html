@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="tip-calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -13,19 +17,43 @@
     />
 
     <title>Frontend Mentor | Tip calculator app</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <h1 class="title">SPLITTER</h1>
+    <div class="calculator-container">
+      <div class="bill-container">
+        <h3>Bill</h3>
+        <input type="text" class="bill-input" />
+      </div>
+
+      <div class="tip-percentage-container">
+        <h3>Select Tip %</h3>
+        <div class="percentage-button-container">
+          <button class="percentage five">5%</button>
+          <button class="percentage ten">10%</button>
+          <button class="percentage fifteen">15%</button>
+          <button class="percentage twenty-five">25%</button>
+          <button class="percentage fifty">50%</button>
+          <input class="custom-percentage" placeholder="Custom" />
+        </div>
+      </div>
+
+      <div class="num-people-container">
+        <h3>Number of People</h3>
+        <input type="text" class="num-people-input" />
+      </div>
+
+      <div class="tip-total-container">
+        <div class="tip-amount-title">Tip Amount</div>
+        <span class="tip-amount">$0.00</span>
+        <div class="per-person">/ person</div>
+
+        <div class="total-bill-amount-title">Total</div>
+        <span class="total-bill-amount">$0.00</span>
+        <div class="per-person">/ person</div>
+
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
   </body>
 </html>
