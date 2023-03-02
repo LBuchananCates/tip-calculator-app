@@ -19,41 +19,51 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <h1 class="title">SPLITTER</h1>
-    <div class="calculator-container">
-      <div class="bill-container">
-        <h3>Bill</h3>
-        <input type="text" class="bill-input" />
-      </div>
+    <img src="./images/logo.svg" alt="splitter-logo" class="splitter-logo" />
 
-      <div class="tip-percentage-container">
-        <h3>Select Tip %</h3>
-        <div class="percentage-button-container">
-          <button class="percentage five">5%</button>
-          <button class="percentage ten">10%</button>
-          <button class="percentage fifteen">15%</button>
-          <button class="percentage twenty-five">25%</button>
-          <button class="percentage fifty">50%</button>
-          <input class="custom-percentage" placeholder="Custom" />
+    <div class="calculator-container">
+      <div class="desktop-container">
+        <div class="bill-container">
+          <h3>Bill</h3>
+          <input type="text" class="bill-input" placeholder="0" />
+        </div>
+
+        <div class="tip-percentage-container">
+          <h3>Select Tip %</h3>
+          <div class="percentage-button-container">
+            <button class="percentage five">5%</button>
+            <button class="percentage ten">10%</button>
+            <button class="percentage fifteen">15%</button>
+            <button class="percentage twenty-five">25%</button>
+            <button class="percentage fifty">50%</button>
+            <input class="custom-percentage" placeholder="Custom" />
+          </div>
+        </div>
+
+        <div class="num-people-container">
+          <h3>Number of People</h3>
+          <input type="text" class="num-people-input" placeholder="0" />
         </div>
       </div>
-
-      <div class="num-people-container">
-        <h3>Number of People</h3>
-        <input type="text" class="num-people-input" />
-      </div>
-
       <div class="tip-total-container">
-        <div class="tip-amount-title">Tip Amount</div>
-        <span class="tip-amount">$0.00</span>
-        <div class="per-person">/ person</div>
+        <div class="tip-total-mini-container">
+          <div class="tip-total-header">
+            <div class="tip-amount-title">Tip Amount</div>
+            <div class="per-person">/ person</div>
+          </div>
+          <span class="tip-amount">$0.00</span>
+        </div>
 
-        <div class="total-bill-amount-title">Total</div>
-        <span class="total-bill-amount">$0.00</span>
-        <div class="per-person">/ person</div>
-
+        <div class="tip-total-mini-container">
+          <div class="tip-total-header">
+            <div class="total-bill-amount-title">Total</div>
+            <div class="per-person">/ person</div>
+          </div>
+          <span class="total-bill-amount">$0.00</span>
+        </div>
         <button class="reset-btn">Reset</button>
       </div>
     </div>
+    <script src="tip-calculator.js"></script>
   </body>
 </html>
