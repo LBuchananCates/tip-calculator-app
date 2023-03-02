@@ -25,26 +25,33 @@
       <div class="desktop-container">
         <div class="bill-container">
           <h3>Bill</h3>
-          <input type="text" class="bill-input" placeholder="0" />
+          <input
+            type="text"
+            class="bill-input"
+            placeholder="0"
+            id="bill-input"
+          />
         </div>
 
         <div class="tip-percentage-container">
           <h3>Select Tip %</h3>
           <div class="percentage-button-container">
-            <button class="percentage five">5%</button>
-            <button class="percentage ten">10%</button>
-            <button class="percentage fifteen">15%</button>
-            <button class="percentage twenty-five">25%</button>
-            <button class="percentage fifty">50%</button>
-            <input class="custom-percentage" placeholder="Custom" />
+            <button class="tip five">5%</button>
+            <button class="tip ten">10%</button>
+            <button class="tip fifteen">15%</button>
+            <button class="tip twenty-five">25%</button>
+            <button class="tip fifty">50%</button>
+            <input class="custom-tip" placeholder="Custom" />
           </div>
         </div>
 
         <div class="num-people-container">
           <h3>Number of People</h3>
+          <span id="error-message">Can't be zero</span>
           <input type="text" class="num-people-input" placeholder="0" />
         </div>
       </div>
+
       <div class="tip-total-container">
         <div class="tip-total-mini-container">
           <div class="tip-total-header">
