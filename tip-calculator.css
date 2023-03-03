@@ -45,7 +45,7 @@ body {
   padding: 20px;
 }
 
-.custom-percentage {
+.custom-tip {
   background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
   border: solid 1px hsl(189, 41%, 97%);
@@ -58,7 +58,7 @@ body {
   padding: 10px;
 }
 
-.custom-percentage:focus {
+.custom-tip:focus {
   border: solid 2px hsl(172, 67%, 45%);
 }
 
@@ -66,7 +66,7 @@ body {
   grid-template-columns: 50px 50px;
 }
 
-.percentage {
+.tip {
   font-family: "space mono";
   font-size: x-large;
   background-color: hsl(183, 100%, 15%);
@@ -78,14 +78,14 @@ body {
   padding: 10px;
 }
 
-.percentage:hover {
+.tip:hover {
   background-color: hsl(172, 67%, 45%);
   border: 1px solid hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   cursor: pointer;
 }
 
-.percentage:checked {
+.tip:checked {
   color: hsl(172, 67%, 45%);
 }
 
@@ -110,6 +110,12 @@ body {
   height: 60px;
   text-align: right;
   padding: 15px;
+}
+
+.error-message {
+  display: none;
+  float: right;
+  color: red;
 }
 
 .tip-total-container {
@@ -206,11 +212,11 @@ input:hover {
     width: 95%;
   }
 
-  .percentage {
+  .tip {
     width: 25%;
   }
 
-  .custom-percentage {
+  .custom-tip {
     width: 25%;
   }
 
