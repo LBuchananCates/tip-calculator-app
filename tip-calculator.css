@@ -85,7 +85,7 @@ body {
   cursor: pointer;
 }
 
-.tip:checked {
+.tip:active {
   color: hsl(172, 67%, 45%);
 }
 
@@ -116,6 +116,11 @@ body {
   display: none;
   float: right;
   color: red;
+}
+
+.active-tip {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .tip-total-container {
@@ -154,7 +159,7 @@ input:hover {
 }
 
 .tip-amount,
-.total-bill-amount {
+.total-per-person {
   color: hsl(172, 67%, 45%);
   float: right;
   font-size: 2em;
@@ -227,7 +232,7 @@ input:hover {
   }
 
   .tip-amount,
-  .total-bill-amount {
+  .total-per-person {
     font-size: 3em;
   }
 }
