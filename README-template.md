@@ -2,6 +2,8 @@
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+Click here to view demo! https://meek-gecko-864ff7.netlify.app
+
 ## Table of contents
 
 - [Overview](#overview)
